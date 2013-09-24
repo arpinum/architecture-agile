@@ -36,7 +36,7 @@
 			<div class="slides">
 				<section>
 					<h1>Le Mythe du framework agile</h1>
-					<h3>Agile Tour 2013</h3>
+					<h3>Agile * 2013</h3>
 					<p>
 						<small>Jean-Baptiste Dusseaut, <a href="http://www.arpinum.fr">arpinum.fr</a> / <a href="http://twitter.com/bodysplash">@bodysplash</a></small>
 					</p>
@@ -46,14 +46,20 @@
 					<p><img src="img/enfer.jpeg" alt="" /></p>
 				</section> 
 				<section>
-					<h2>Les remarques entendues…</h2>
-					<ul>
-						<li>C'est compliqué</li>
-						<li>C'est difficile à tester</li>
-						<li>C'est bugué</li>
-						<li>Le support est déplorable</li>
-						<li>Si un cas n'est pas prévu, il faut hacker dans tous les sens pour s'en sortir</li>
-					</ul>
+					
+					<section>
+						<h2>Les remarques entendues…</h2>
+						<ul>
+							<li>C'est compliqué</li>
+							<li>C'est difficile à tester</li>
+							<li>C'est bugué</li>
+							<li>Le support est déplorable</li>
+							<li>Si un cas n'est pas prévu, il faut hacker dans tous les sens pour s'en sortir</li>
+						</ul>
+					</section>
+					<section>
+						<img src="img/lapin.png" alt="" />
+					</section>
 				</section>
 		   
 				<section>
@@ -74,7 +80,29 @@
 					</section>
 				</section>
 				<section>
-					<h2>Example</h2>
+					<section>
+						<h2>Les promesses</h2>
+						<ul>
+							<li>Prend les décisions de module pour vous</li>
+							<li>Prend les décisions de sécurité pour vous</li>
+							<li>Plein de documentation</li>
+							<li>Système de plugin</li>
+							<li>Enorme communauté</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Et aussi...</h2>
+						<ul>
+							<li>Interface d'admin automatique</li>
+							<li>Migration de schéma</li>
+							<li>Authentification</li>
+							<li>Sessions et cookies</li>
+							<li>Internotialization	</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>Mais...</h2>
 					<p>
 						<pre><code class="java" data-trim>
 public static void showTravel(Date outbound, Date inbound, String origin, String destination) {
@@ -101,24 +129,43 @@ public static void showTravel(Date outbound, Date inbound, String origin, String
 				<section>
 					<h2>Les soucis</h2>
 					<ul>
-						<li class="fragment">Choisis une architecture pour vous</li>
-						<li class="fragment">Encourage une application unique façon BBOM</li>
-						<li class="fragment">MVC n'est pas une architecture</li>
+						<li class="fragment">Les composants sont très couplés entre eux</li>
+						<li class="fragment">Il faut une grosse connaissance de la communauté</li>
+						<li class="fragment">Encourage l'émergence d'une application monolithique</li>
 					</ul>
 				</section>
 				<section>
-					<h1>Un framework, c'est lui qui vous utilise</h1>
+					<section>
+						<h1>Un framework, c'est lui qui vous utilise</h1>
+					</section>
+					<section>
+						<h1>MVC n'est pas une architecture</h1>
+					</section>
 				</section>
 				<section>
 					<h2>Mais qu'est-ce donc une bonne architecture ?</h2>
 					<ul>
 						<li class="fragment">Permet de retarder les décisions</li>
-						<li class="fragment">Permet de minimiser les décisions</li>
 						<li class="fragment">Minimise le couplage</li>
 						<li class="fragment">Évolutive</li>
+						<li class="fragment">"Composable"</li>
 					</ul>
-
 				</section>
+				<section>
+					<h1>Met le métier au coeur des préoccupations</h1>
+					<h3>Pour de vrai</h3>
+				</section>
+			   <section>
+			   	<h2>Inspirations</h2>
+				<ul>
+					<li>DDD !</li>
+					<li>Architecture hexagonale</li>
+					<li>CQRS</li>
+					<li>Clean architecture</li>
+					<li>Ivar Jacobson</li>
+					<li>Et bien d'autres</li>
+				</ul>
+			   </section> 
 			</div>
 
 		</div>
