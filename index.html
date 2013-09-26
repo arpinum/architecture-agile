@@ -42,7 +42,7 @@
 					</p>
 				</section>
 				<section>
-					<h2>Un framework ?</h2>
+					<h2>Le gros framework d'entreprise</h2>
 					<p><img src="img/enfer.jpeg" alt="" /></p>
 				</section> 
 				<section>
@@ -103,35 +103,14 @@
 				</section>
 				<section>
 					<h2>Mais...</h2>
-					<p>
-						<pre><code class="java" data-trim>
-public static void showTravel(Date outbound, Date inbound, String origin, String destination) {
-	Airfare airfare = Airfare.findFor(origin, destination, outbound, inbound);
-		if(airfare != null) {
-			Hotel hotel = Hotel.findHotelFor(origin, destination, outbound, inbound);
-			if(hotel != null) { 
-				if(airfare.arrivalHour!= null && airfare.arrivalHour > 23) { 
-					Car car = Car.findCarFor(Date outbound, airfare.arrivalAirport, airfare.arrivalHour);
-					render(airfare, hotel, car);           
-				} else {
-					render(airfare, hotel, null); // la vue se débrouillera avec le null...               
-				}
-			} else {
-				renderTemplate("Application/noHotel.html");
-			}    
-		} else { 
-			renderTemplate("Application/noAirfare.html");
-		}      
-	}
-						</code></pre>
-					</p>
 				</section>  
 				<section>
 					<h2>Les soucis</h2>
 					<ul>
 						<li class="fragment">Les composants sont très couplés entre eux</li>
-						<li class="fragment">Il faut une grosse connaissance de la communauté</li>
-						<li class="fragment">Encourage l'émergence d'une application monolithique</li>
+						<li class="fragment">Le billet à l'entrée est en fait plutôt élevé passé le Hello World</li>
+						<li class="fragment">Encourage l'émergence d'une application monolithique</li> 
+						<li class="fragment">Très fort couplage à la base</li>
 					</ul>
 				</section>
 				<section>
@@ -148,24 +127,79 @@ public static void showTravel(Date outbound, Date inbound, String origin, String
 						<li class="fragment">Permet de retarder les décisions</li>
 						<li class="fragment">Minimise le couplage</li>
 						<li class="fragment">Évolutive</li>
-						<li class="fragment">"Composable"</li>
+						<li class="fragment">Testable !</li> 
+						<li class="fragment">Ne pas confondre outils et architectures</li>
+					</ul>
+					
+				</section>
+			   <section>
+					<section>
+						<h2>Inspirations</h2>
+						<ul>
+							<li>DDD !</li>
+							<li>Architecture hexagonale</li>
+							<li>CQRS</li>
+							<li>Clean architecture</li>
+							<li>Ivar Jacobson</li>
+							<li>Et bien d'autres</li>
+						</ul>   
+					</section>
+						<section>
+							<img src="img/cleanarchitecture.jpg" alt="" />
+						</section>
+						<section>
+							<img src="img/onion.png" alt="" />
+						</section>
+						<section><img src="img/hexagonal.gif" alt="" />  </section>
+				</section>
+				<section>
+					<h2>Mettre le(s) métier(s) au coeur des préoccupations</h2>
+					<h3>«Stable dependencies principle»</h3>
+					<ul>
+						<li class="fragment">Accepte parfaitement le TDD</li>
+						<li class="fragment">La base de données n'existe pas</li>
+					</ul>  
+				</section>
+				<section>
+					<h2>Encapsuler les cas d'utilisation dans des commandes</h2>
+					<ul>
+						<li class="fragment">Permet de brancher facilement n'importe quoi (Web, Socket, Tests d'acceptation)</li>
+						<li class="fragment">Peut permettre de déduire de meilleurs interfaces graphiques</li>
+						<li class="fragment">Éventuellement exécutable sur un autre serveur</li>
+						<li class="fragment">Accepte parfaitement du TDD</li>
+						<li class="fragment">La base de données n'existe pas</li>
+					</ul>
+				</section> 
+				<section>
+					<h2>Un service REST</h2>
+					<ul>
+						<li class="fragment">Une certaine similarité de forme avec les concepts DDD</li>
+						<li class="fragment">Accepte facilement éventuellement des tests de haut niveau</li>
+						<li class="fragment">Accepte parfaitement le TDD</li>
+						<li class="fragment">La base de données n'existe pas</li>
 					</ul>
 				</section>
 				<section>
-					<h1>Met le métier au coeur des préoccupations</h1>
-					<h3>Pour de vrai</h3>
+					<h2>Assemblage de l'ensemble au runtime</h2> 
+					<ul>
+						<li class="fragment">Tout est dans le code, pas de conventions oubliables à se rappeler</li>
+						<li class="fragment">C'est simple, pas simpliste</li>
+					</ul>
 				</section>
-			   <section>
-			   	<h2>Inspirations</h2>
-				<ul>
-					<li>DDD !</li>
-					<li>Architecture hexagonale</li>
-					<li>CQRS</li>
-					<li>Clean architecture</li>
-					<li>Ivar Jacobson</li>
-					<li>Et bien d'autres</li>
-				</ul>
-			   </section> 
+				<section>
+					<h2>Et exposons ça dans une jolie application</h2>
+				</section>
+				<section>
+					<h2>Pour conclure</h2>
+					<ul>
+						<li>Avons-nous respecter les critères d'une bonne architecture ?</li>
+						<li>C'était pas si compliqué finalement</li>
+					</ul>
+				</section>
+				<section>
+					<blockquote>Are we really so naive as to think that the best way to write a complex system is to throw a bunch of components into a bag and shake it until it works?</blockquote>
+					Uncle Bob
+			   </section>
 			</div>
 
 		</div>
