@@ -40,6 +40,7 @@
 					<p>
 						<small>Jean-Baptiste Dusseaut, <a href="http://www.arpinum.fr">arpinum.fr</a> / <a href="http://twitter.com/bodysplash">@bodysplash</a></small>
 					</p>
+					 <img width="10%" height="10%" src="img/logo-arpinum.png" alt="Arpinum"/>
 				</section>
 				<section>
 					<h2>Le gros framework d'entreprise</h2>
@@ -69,7 +70,7 @@
 							<li>Play ?</li>
 							<li>Rails ?</li>
 							<li>Roo ?</li>
-							<li>Groovy ?</li>
+							<li>Grails ?</li>
 							<li>Cake ?</li>
 							<li>Django ?</li>
 						</ul>
@@ -103,14 +104,21 @@
 				</section>
 				<section>
 					<h2>Mais...</h2>
+					<h2>La règle des 80/20</h2>
+					<ul>
+						<li>Passer 2 mois à écrire 80% de votre application</li>
+						<li>Passer 8 mois à écrire les 20% restants</li>
+					</ul>
 				</section>  
 				<section>
-					<h2>Les soucis</h2>
+					<h2>Les comportements que cela encourage</h2>
 					<ul>
-						<li class="fragment">Les composants sont très couplés entre eux</li>
-						<li class="fragment">Le billet à l'entrée est en fait plutôt élevé passé le Hello World</li>
+						<li class="fragment">«Fat» contrôleurs</li>
+						<li class="fragment">Passé le hello world, le ticket d'entrée n'est pas si petit</li>
 						<li class="fragment">Encourage l'émergence d'une application monolithique</li> 
-						<li class="fragment">Très fort couplage à la base</li>
+						<li class="fragment">Le métier est très fortement couplé à la base</li>
+						<li class="fragment">Le métier est très fortement couplé à la manière de le représenter</li>
+						<li class="fragment">Difficultés de mise à jour</li>
 					</ul>
 				</section>
 				<section>
@@ -120,18 +128,22 @@
 					<section>
 						<h1>MVC n'est pas une architecture</h1>
 					</section>
+					<section>
+						<img src="img/tools.jpg" alt="" />
+						<p>!=</p>
+						<img src="img/house.jpg" alt="" />
+						</section>
 				</section>
 				<section>
 					<h2>Mais qu'est-ce donc une bonne architecture ?</h2>
 					<ul>
 						<li class="fragment">Permet de retarder les décisions</li>
 						<li class="fragment">Minimise le couplage</li>
-						<li class="fragment">Évolutive</li>
+						<li class="fragment">Facile à changer</li>
 						<li class="fragment">Testable !</li> 
-						<li class="fragment">Ne pas confondre outils et architectures</li>
 					</ul>
-					
 				</section>
+				<section><img src="img/cycle-tdd.jpg" alt="" /></section>
 			   <section>
 					<section>
 						<h2>Inspirations</h2>
@@ -140,7 +152,6 @@
 							<li>Architecture hexagonale</li>
 							<li>CQRS</li>
 							<li>Clean architecture</li>
-							<li>Ivar Jacobson</li>
 							<li>Et bien d'autres</li>
 						</ul>   
 					</section>
@@ -191,13 +202,14 @@
 				<section>
 					<h2>Assemblage de l'ensemble au runtime</h2> 
 					<ul>
-						<li class="fragment">Tout est dans le code, pas de conventions oubliables à se rappeler</li>
+						<li class="fragment">Tout est dans le code, pas de conventions plus ou moins tordues à se rappeler</li>
 						<li class="fragment">C'est simple, pas simpliste</li>
 					</ul>
 				</section>
 				<section>
 					<h2>Et exposons ça dans une jolie application</h2>
 				</section>
+				<section><img src="img/global.jpg" alt="" /></section>
 				<section>
 					<h2>Pour conclure</h2>
 					<ul>
